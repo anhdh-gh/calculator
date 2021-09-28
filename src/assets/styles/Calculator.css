@@ -1,0 +1,104 @@
+.calculator-container {
+    width: 300px;
+    padding: 15px;
+    border: 3px solid #e0e0e0;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.calculator-container .calculator-screen {
+    width: 100%;
+    text-align: right;
+    border: none;
+    /* border: 1px solid #d9d9d9; */
+    line-height: 20px;
+    font-size: 20px;
+    outline: none;
+}
+
+.calculator-container .calculator-input {
+    margin: 7px 0 15px 0;
+    width: 100%;
+    text-align: right;
+    border: 1px solid #d9d9d9;
+    border-top-color: #c0c0c0;
+    line-height: 36px;
+    font-size: 24px;
+    border-radius: 3px;
+    outline: none;
+}
+
+.calculator-container .calculator-buttons {
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.calculator-buttons button {
+    border-radius: 3px;
+    width: 21%;
+    height: 30px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.calculator-buttons button:hover {
+    box-shadow: #ccc 1px 1px 3px;
+}
+
+/* Đối với số */
+.calculator-buttons button.number {
+    font-size: 18px;
+    border-color: #dedede;
+    background: whiteSmoke;
+    background-image: -webkit-linear-gradient(top, #fafafa, whiteSmoke);    
+}
+
+.calculator-buttons button.number:active {
+    background: #efefef;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f0f0f0), color-stop(1, #fafafa));
+}
+
+/* Đối với + - x ÷ */
+.calculator-buttons button.operator {
+    font-size: 24px;
+    color: #fff;
+    border-color: #444;
+    background: #666;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #777), color-stop(1, #333));   
+}
+
+.calculator-buttons button.operator:active {
+    background: #333;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #333), color-stop(1, #777));
+}
+
+/* Đối với các nút chức năng như AC, ... */
+.calculator-buttons button.function {
+    color: #fff;
+    border-color: #d14836;
+    background: #d74937;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e5634b), color-stop(1, #c4261c));   
+}
+
+.calculator-buttons button.function:active {
+    background: #a00;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #c4261c), color-stop(1, #e5634b));
+}
+
+/* Đối với các nút primary như =, ... */
+.calculator-buttons button.primary {
+    font-size: 20px;
+    color: #fff;
+    border-color: #3079ed;
+    background: #4f80d6;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #6eb2e6), color-stop(1, #4169ce)); 
+}
+
+.calculator-buttons button.primary:active {
+    background: #00a;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4169ce), color-stop(1, #6eb2e6));
+}
