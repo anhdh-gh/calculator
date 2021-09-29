@@ -10,7 +10,6 @@
     width: 100%;
     text-align: right;
     border: none;
-    /* border: 1px solid #d9d9d9; */
     line-height: 20px;
     font-size: 20px;
     outline: none;
@@ -26,6 +25,12 @@
     font-size: 24px;
     border-radius: 3px;
     outline: none;
+}
+
+.calculator-container .calculator-screen::selection,
+.calculator-container .calculator-input::selection {
+    background-color:#EEE;
+    color: #d30000;
 }
 
 .calculator-container .calculator-buttons {
@@ -101,4 +106,13 @@
 .calculator-buttons button.primary:active {
     background: #00a;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4169ce), color-stop(1, #6eb2e6));
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
