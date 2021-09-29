@@ -32,7 +32,7 @@ const Calculator = (props) => {
     const keyBang = useRef()
 
     useEffect(() => {
-        calculatorRef.current.addEventListener('mouseover', () => inputRef.current.focus())
+        ["click", 'mouseover'].map(evt => calculatorRef.current.addEventListener(evt, () => inputRef.current.focus()))
         calculatorRef.current.addEventListener('keydown', e => keyPress(e.key, e.code))
     }, [])
 
