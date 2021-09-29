@@ -5,6 +5,7 @@ import { isNumeric, calculate } from '../utils'
 let entering = true, number1 = "", number2 = "", operator = ""
 
 const Calculator = (props) => {
+    const { className } = props
 
     const [screen, setScreen] = useState("")
     const [input, setInput] = useState("")
@@ -178,7 +179,7 @@ const Calculator = (props) => {
     }
 
     // Render giao diện
-    return <div className="calculator-container" ref={calculatorRef}>
+    return <div className={`calculator-container ${className}`} ref={calculatorRef}>
         {/* Phần hiển thị phép tính */}
         <input type="text" className="calculator-screen" value={screen} readOnly/>
 
