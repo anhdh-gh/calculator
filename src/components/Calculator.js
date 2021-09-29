@@ -124,4 +124,4 @@ const Calculator = (props) => {
     </div>
 }
 
-export default Calculator;
+export default Calculator
