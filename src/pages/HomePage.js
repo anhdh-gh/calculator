@@ -1,7 +1,8 @@
+import '../assets/styles/HomePage.css'
 import { Calculator } from '../components'
 
 const HomePage = () => {
-    return <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>
+    return <div className="homepage-container">
         <Calculator/>
     </div>
 }

@@ -10,6 +10,9 @@
   flex-direction: column;
   background-color: black;
   font-family: "Merriweather", serif;
+  background-image: url('../images/background.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
 }
 
 .pageNotFound-container .title {
