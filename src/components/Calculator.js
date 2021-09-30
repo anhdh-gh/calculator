@@ -85,7 +85,6 @@ const Calculator = (props) => {
                 keyChia.current.click()
                 break
             case 'Backspace':
-                console.log('fasd')
                 keyBack.current.click()
                 break
             case ' ':
