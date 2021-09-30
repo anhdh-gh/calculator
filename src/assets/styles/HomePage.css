@@ -1,6 +1,6 @@
 .homepage-container {
     transition: all .8s ease;
-    animation: slideZoom 0.80s ease forwards .5s;
+    animation: slideZoom 0.80s ease /*forwards .5s - Muốn delay sau bao nhiêu giây thực hiện animation thì thêm cái này vào */;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +11,7 @@
 }
 
 .homepage-container .calculatorHp {
-    animation: slideUp 1s ease forwards .5s;
+    animation: slideUp 1s ease /*forwards .5s - Muốn delay sau bao nhiêu giây thực hiện animation thì thêm cái này vào */;
     transition: all .8s ease;    
 }
 
