@@ -7,7 +7,7 @@ const HomePage = () => {
 
     useEffect(() => {
         setTimeout(() => setLoader(false), 1000)
-        setTimeout(() => notify.success('Welcome to calculator!'), 1000)
+        setTimeout(() => notify.success('Welcome to calculator!'), 1500)
     }, [])
 
     return loader ? <Loader/> : <div className="homepage-container">
