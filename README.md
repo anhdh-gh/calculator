@@ -1,2 +1,13 @@
-# Website1: https://calculator-gamma-livid.vercel.app
-# Website2: https://calculator-dha.herokuapp.com
+## Website mô phỏng máy tính bấm tay bỏ túi
+
+## Website:
+- https://calculator-gamma-livid.vercel.app
+- https://calculator-dha.herokuapp.com
+
+## Công nghệ sử dụng:
+- HTML
+- CSS
+- JS
+- ReactJS
+- Vercel
+- Heroku
